@@ -8,12 +8,12 @@ def bowl():
     return random.choice(balls)
 
 
-def ball_engine(bowl , shot):
-    if bowl in (1, 2) and shot in (1, 2):
+def ball_engine(bowl_type , shot):
+    if bowl_type in (1, 2) and shot in (1, 2):
         return 4
-    elif bowl in (3, 4) and shot in (3, 4):
+    elif bowl_type in (3, 4) and shot in (3, 4):
         return 6
-    elif bowl == 1 and shot in (2, 3, 4):
+    elif bowl_type == 1 and shot in (2, 3, 4):
         return "out"
     else:
         return 0
