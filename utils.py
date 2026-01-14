@@ -31,6 +31,7 @@ def commentary(result):
     elif result == 4:
         print("✨ CLASSY FOUR!")
     elif result == "out":
+        time.sleep(0.5)
         print("🔥 CLEAN BOWLED! OUT!")
     else:
         print("• Dot ball")
